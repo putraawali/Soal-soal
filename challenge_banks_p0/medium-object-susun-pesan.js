@@ -24,49 +24,27 @@ outputnya : 'musuh membawa granat'
 */
 
 function susunPesan(arr) {
-  let output = '';
-  const tempObj = {}
-  for (let i = 0; i < arr.length; i++) {
-    // console.log(arr[i][0], arr[i][1])
-    if (tempObj[arr[i][1]] === undefined) {
-      tempObj[arr[i][1]] = arr[i][0]
-    }
-  }
-  // console.log(tempObj)
-  
-  let aw = Object.keys(tempObj)
-
-  // console.log(aw)
-  for (let i = 0; i < aw.length; i++) {
-    output += tempObj[aw[i]]
-    if (aw[i + 1] !== undefined) {
-      output += ' '
-    }
-  }
-
-  // for (let keys in tempObj) {
-  //   // console.log(tempObj[keys])
-  //   output += tempObj[keys] + ' '
-  // }
-  
-  return output
+  // write your code here
 }
 
-console.log(susunPesan([
-  ['besok', 4],
-  ['kita', 1],
-  ['akan', 2],
-  ['menyerang', 3],
-  ['pagi', 5]
-]))
+console.log(
+  susunPesan([
+    ["besok", 4],
+    ["kita", 1],
+    ["akan", 2],
+    ["menyerang", 3],
+    ["pagi", 5],
+  ])
+);
 
 // outputnya : 'kita akan menyerang besok pagi'
 
+console.log(
+  susunPesan([
+    ["granat", 3],
+    ["musuh", 1],
+    ["membawa", 2],
+  ])
+);
 
-console.log(susunPesan([
-  ['granat', 3],
-  ['musuh', 1],
-  ['membawa', 2]
-]))
-
-outputnya : 'musuh membawa granat'
+outputnya: "musuh membawa granat";

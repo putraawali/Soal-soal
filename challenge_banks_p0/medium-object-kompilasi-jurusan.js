@@ -20,39 +20,19 @@ output :
 }
 */
 function kompilasi(arr) {
-  let output = {};
-  let tempBio = [];
-  let tempFis = [];
-  let tempAku = [];
-
-  for (let i = 0; i < arr.length; i++) {
-    if (output[arr[i][0]] === undefined) {
-      output[arr[i][0]] = []
-    }
-    if (arr[i][0] === 'Biologi') {
-      tempBio.push(arr[i][1]);
-    } else if (arr[i][0] === 'Fisika') {
-      tempFis.push(arr[i][1]);
-    } else {
-      tempAku.push(arr[i][1])
-    }
-  }
-  output['Biologi'] = tempBio;
-  output['Fisika'] = tempFis;
-  output['Akuntansi'] = tempAku
-  return output;
+  // write your code here
 }
 
-console.log(kompilasi(
-  [
-    ['Biologi', 'Jonas'],
-    ['Fisika', 'Ulrich'],
-    ['Akuntansi', 'Hannah'],
-    ['Biologi', 'Barbosz'],
-    ['Fisika', 'Claudia'],
-    ['Biologi', 'Edmund'],
-  ]
-))
+console.log(
+  kompilasi([
+    ["Biologi", "Jonas"],
+    ["Fisika", "Ulrich"],
+    ["Akuntansi", "Hannah"],
+    ["Biologi", "Barbosz"],
+    ["Fisika", "Claudia"],
+    ["Biologi", "Edmund"],
+  ])
+);
 
 // output: {
 //   Biologi: ['Jonas', 'Barbosz', 'Edmund'],

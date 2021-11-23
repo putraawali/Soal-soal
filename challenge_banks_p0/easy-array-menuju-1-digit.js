@@ -21,38 +21,10 @@ Output : [29, 11, 2]
 */
 
 function menujuSatuDigit(numb) {
-    numb = numb.toString()
-    let output = []
-    let temp = 0;
-
-    for (let i = 0; i < numb.length; i++) {
-        // console.log(numb[i])
-        temp += Number(numb[i])
-    }
-    output.push(temp);
-    temp = 0;
-    if (output[0] >= 10) {
-        let tempArr = output;
-        tempArr = tempArr.toString()
-        for (let i = 0; i < tempArr.length; i++) {
-            temp += Number(tempArr[i])
-        }
-        output.push(temp)
-    }
-    temp = 0;
-    if (output[1] >= 10) {
-        let tempArr = output;
-        tempArr = tempArr.toString()
-        // console.log(tempArr, `ini arr`)
-        for (let i = 0; i < tempArr[1].length; i++) {
-            temp += Number(tempArr[i])
-        }
-        output.push(temp)
-    }
-    return output
+  // write your code here
 }
 
-console.log(menujuSatuDigit(123))
-console.log(menujuSatuDigit(999))
-console.log(menujuSatuDigit(542984))
-console.log(menujuSatuDigit(9992))
+console.log(menujuSatuDigit(123));
+console.log(menujuSatuDigit(999));
+console.log(menujuSatuDigit(542984));
+console.log(menujuSatuDigit(9992));

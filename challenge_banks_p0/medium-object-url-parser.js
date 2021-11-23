@@ -7,52 +7,17 @@ Buatlah sebuah fungsi yang bernama urlParser, yang akan menerima input sebuah UR
 Contoh ada pada driver code di bawah :
 */
 function urlParser(str) {
-  let output = {
-    protocol: '',
-    domain: '',
-    unsername: ''
-  };
-  let tempStr = ''
-
-  for (let i = 0; i < str.length; i++) {
-    // console.log(str[i])
-    if (str[i] === ":") {
-      output['protocol'] = tempStr;
-      // console.log(tempStr);
-      tempStr = '';
-    } else {
-      tempStr += str[i]
-    }
-
-    if (str[i] === '/' && str[i - 1] === '/') {
-      tempStr = '';
-    } else if (str[i + 1] === '/') {
-      output['domain'] = tempStr
-      tempStr = '';
-    } else if (str[i] === '/') {
-      tempStr = ''
-      console.log(tempStr)
-    }
-
-    if (str[i + 1] === undefined) {
-      if (tempStr === '') {
-        output['unsername'] = 'not available'
-      } else {
-        output['unsername'] = tempStr
-      }
-    }
-  }
-  return output
+  // write your code here
 }
 
-console.log(urlParser('https://facebook.com/foo'))
+console.log(urlParser("https://facebook.com/foo"));
 // {
 //   protocol: 'https',
 //   domain: 'facebook.com',
 //   username: 'foo'
 // }
 
-console.log(urlParser('http://imgur.co.id/'))
+console.log(urlParser("http://imgur.co.id/"));
 // {
 //   protocol: 'http',
 //   domain: 'imgur.co.id',

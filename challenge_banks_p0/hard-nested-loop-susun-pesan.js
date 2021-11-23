@@ -23,41 +23,22 @@ outputnya : 'kita akan menyerang besok pagi'
 outputnya : 'musuh membawa granat'
 */
 function susunPesan(arr) {
-  let temp = []
-  let output = '';
-
-  for (let i = 0; i < arr.length; i++) {
-    temp.push(arr[i][1])
-    temp.sort()
-  }
-
-  for (let j = 0; j < temp.length; j++) {
-    for (let i = 0; i < arr.length; i++) {
-      if (temp[j] === arr[i][1]) {
-        output += arr[i][0]
-      }
-    }
-
-    if (j === temp.length - 1) {
-      break
-    }
-
-    output += ' '
-  }
-
-  return output
+  // write your code here
 }
 
-
-console.log(susunPesan([
-  ['besok', 4],
-  ['kita', 1],
-  ['akan', 2],
-  ['menyerang', 3],
-  ['pagi', 5]
-]))
-console.log(susunPesan([
-  ['granat', 3],
-  ['musuh', 1],
-  ['membawa', 2]
-]))
+console.log(
+  susunPesan([
+    ["besok", 4],
+    ["kita", 1],
+    ["akan", 2],
+    ["menyerang", 3],
+    ["pagi", 5],
+  ])
+);
+console.log(
+  susunPesan([
+    ["granat", 3],
+    ["musuh", 1],
+    ["membawa", 2],
+  ])
+);

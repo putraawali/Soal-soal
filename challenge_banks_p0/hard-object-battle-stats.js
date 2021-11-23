@@ -41,28 +41,7 @@ Output :
 
 */
 function battleStats(arr) {
-  let output = {};
-
-  for (let i = 0; i < arr.length; i++) {
-    let namaJendral = arr[i][0];
-    let perang = arr[i][1];
-    if (output[namaJendral] === undefined) {
-      output[namaJendral] = {
-        Kalah: 0,
-        Menang: 0
-      }
-    }
-
-    if (perang < 0) {
-      output[namaJendral].Kalah += perang * -1
-    }
-
-    if (perang > 0) {
-      output[namaJendral].Menang += perang
-    }
-  }
-
-  return output
+  // write your code here
 }
 let battle = [
   ["Hwang Shi Mok", -1],
@@ -73,6 +52,6 @@ let battle = [
   ["Legolas", 10],
   ["Legolas", -20],
   ["Legolas", -10],
-]
+];
 
-console.log(battleStats(battle))
+console.log(battleStats(battle));

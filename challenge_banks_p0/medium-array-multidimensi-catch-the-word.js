@@ -3,31 +3,19 @@ Buatlah sebuah function catchTheWord yang akan menerima input berupa array 2 dim
 */
 
 let arr_str = [
-  [' ', 'H', ' '],
-  ['a', ' ', ' ', ' ', ' '],
-  [' ', ' ', ' ', ' ', 'c', ' ', ' '],
-  [' ', ' ', ' ', 'k', ' '],
-  [' ', ' ', 't', ' '],
-  [' ', ' ', 'i', ' ', ' '],
-  [' ', ' ', ' ', 'v', ' '],
-  [' '],
-  [' ', ' ', ' ', ' ', '8']
-]
+  [" ", "H", " "],
+  ["a", " ", " ", " ", " "],
+  [" ", " ", " ", " ", "c", " ", " "],
+  [" ", " ", " ", "k", " "],
+  [" ", " ", "t", " "],
+  [" ", " ", "i", " ", " "],
+  [" ", " ", " ", "v", " "],
+  [" "],
+  [" ", " ", " ", " ", "8"],
+];
 
 function catchTheWord(arr) {
-  let output = '';
-
-  for (let i = 0; i < arr.length; i++) {
-    // console.log(arr[i])
-    for (let j = 0; j < arr[i].length; j++) {
-      // console.log(arr[i][j])
-      if (arr[i][j] !== ' ') {
-        output += arr[i][j];
-      }
-    }
-  }
-
-  return output;
+  // write your code here
 }
 
-console.log(catchTheWord(arr_str)) // Hacktiv8
+console.log(catchTheWord(arr_str)); // Hacktiv8
